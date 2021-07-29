@@ -5,18 +5,32 @@ import { useState } from "react";
 function App() {
   return (
     <div className="App">
-      <h1 className=" bg-dark text-light p-3"> header</h1>
-      <h5 style={{ color: "white", backgroundColor: "black" }}>
-        jDBJDUIQGHKD CQCIFDG3UKHF2WIURGFB C IURGIUH IUWGFWGIUWGFHJ
-        BIGFHUIHEIUGHAFIEUFAKSBVJKSBk
-      </h5>
+      <Helloworld />
+      <Helloworld />
 
-      <h5 className="ext_style">
-        jDBJDUIQGHKD CQCIFDG3UKHF2WIURGFB C IURGIUH IUWGFWGIUWGFHJ
-        BIGFHUIHEIUGHAFIEUFAKSBVJKSBk
-      </h5>
+      <Hellouniverse />
     </div>
   );
+}
+
+// Tags :: Components :: Follow Pascalcase Convention
+// <Helloworld />
+function Helloworld() {
+  return (
+    <div className="bg-success p-2 m-2 border text-light">
+      <h1> Hello World</h1>
+      <hr />
+      <p> hjfcyJGDXVQYUDj jhfd HFD JHGJF jhj jgf huig kuhi jguyfe YFFE </p>
+    </div>
+  );
+}
+
+function Hello() {
+  return <h1> Hello World</h1>;
+}
+
+function Hellouniverse() {
+  return <h1> Hello universe </h1>;
 }
 
 export default App;
