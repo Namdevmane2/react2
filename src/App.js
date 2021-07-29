@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+
+// JSX = javascript + html
 
 function App() {
+  // let id = 100;
+  // let name = "sachin";
+  // let title = " hello react ";
+  // let list = ["delhi", "mumbai", "nagpur"];
+
+  // data member
+  // let title = "Event demo";
+
+  // member function
+  // let myfun = () => {
+  //   alert("I am Click handler");
+  // };
+
+  let list = ["hello", "hello"];
+
+  const addNewHello = () => {
+    list.push("hello");
+    console.log(list);
+  };
+  // view -> that is getting render in browser.
+  // inside html you can access js variable
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Working with Events and List </h1>
+      <input type="button" value="Say Hello" onclick={addNewHello} />
+
+      {list.map((item) => {
+        return <h3> {item} </h3>;
+      })}
     </div>
   );
 }
