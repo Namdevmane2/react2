@@ -1,23 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
-
-// JSX = javascript + html
+import { useState } from "react";
 
 function App() {
-  //
-  let title = " learning React";
-
-  // stateless member
-  let counter = 100;
-  let increament = () => {
-    // alert("I m Alert. ");
-    counter += 1;
-  };
   return (
     <div className="App">
-      <h1 className="bg-primary text-light p-3"> stateless Ui </h1>
-      {counter}
-      <input type="button" value="increment" onclick="{increment}" />
+      <h1 className=" bg-dark text-light p-3"> header</h1>
+      <h5 style={{ color: "white", backgroundColor: "black" }}>
+        jDBJDUIQGHKD CQCIFDG3UKHF2WIURGFB C IURGIUH IUWGFWGIUWGFHJ
+        BIGFHUIHEIUGHAFIEUFAKSBVJKSBk
+      </h5>
+
+      <h5 className="ext_style">
+        jDBJDUIQGHKD CQCIFDG3UKHF2WIURGFB C IURGIUH IUWGFWGIUWGFHJ
+        BIGFHUIHEIUGHAFIEUFAKSBVJKSBk
+      </h5>
     </div>
   );
 }
