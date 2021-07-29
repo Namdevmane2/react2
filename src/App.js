@@ -29,11 +29,6 @@ function App() {
   return (
     <div className="App">
       <h1> Working with Events and List </h1>
-      <input type="button" value="Say Hello" onclick={addNewHello} />
-
-      {list.map((item) => {
-        return <h3> {item} </h3>;
-      })}
     </div>
   );
 }
