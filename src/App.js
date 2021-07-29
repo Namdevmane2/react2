@@ -4,6 +4,8 @@ import "./App.css";
 // JSX = javascript + html
 
 function App() {
+  let title = " learning React";
+  let counter = 100;
   return (
     <div className="App">
       <h1 className="bg-primary text-light p-3"> Hello world </h1>
