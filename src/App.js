@@ -6,14 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1> registration </h1>
-      <label> username</label>
-      <input type="text" />
-
-      <label> username</label>
-      <input type="text" />
-
-      <button type="button"> register</button>
+      <h1 className="bg-primary text-light p-3"> Hello world </h1>
     </div>
   );
 }
