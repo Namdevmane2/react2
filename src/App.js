@@ -14,24 +14,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <Link to="/Page1">
-        <h1>Page1</h1>
-      </Link>
-      <Link to="/Page2">
-        <h1>Page2</h1>
-      </Link>
-      <Link to="/Page3">
-        <h1>Page3</h1>
-      </Link>
-
-      <Link to="/hw">
-        <h1> Outside page1</h1>
-      </Link>
-
-      <Link to="/hu">
-        <h1> Outside page2</h1>
-      </Link>
-
+      <NavMenu />
       <Link to="/Page3"> Page4</Link>
       <Route exact={true} path="/Page1" component={Page1} />
       <Route exact={true} path="/Page2" component={Page2} />
@@ -40,7 +23,22 @@ function App() {
 
       <Route exact="true" path="/hw" component={Tag1} />
       <Route exact="true" path="/hu" component={Tag2} />
+      <NavMenu />
     </BrowserRouter>
+  );
+}
+
+function NavMenu() {
+  return (
+    <div>
+      <Link to="/Page1">Page1</Link>
+      <Link to="/Page2">Page2</Link>
+      <Link to="/Page3">Page3</Link>
+
+      <Link to="/hw">Outside page1</Link>
+
+      <Link to="/hu">Outside page2</Link>
+    </div>
   );
 }
 
