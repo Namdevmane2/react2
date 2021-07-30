@@ -1,3 +1,14 @@
+.tag2 {
+  background-color: aquamarine;
+  color: blue;
+}
+
+.tag2 h1 {
+  background-color: azure;
+  font-size: 50px;
+  color: red;
+}
+
 .ext_style {
   background-color: red;
 }
